@@ -32,7 +32,7 @@
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-docs"
+      "url": "apis"
     }
   ],
   "navigation": [
@@ -101,13 +101,13 @@
     },
     {
       "group": "Overview",
-      "pages": ["api-docs/authentication", "api-docs/pagination"]
+      "pages": ["apis/authentication", "apis/pagination"]
     },
     {
       "group": "Resources",
       "pages": [
-        "api-docs/resources/imports/list-imports",
-        "api-docs/resources/records/import-records"
+        "apis/resources/imports/list-imports",
+        "apis/resources/records/import-records"
       ]
     }
   ],
