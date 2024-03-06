@@ -1,91 +1,127 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Flatirons Fuse Documentation",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/images/logo-dark.svg",
+    "light": "/images/logo-light.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#E94C62",
+    "light": "#E94C62",
+    "dark": "#000000",
+    "background": {
+      "dark": "#000000"
+    },
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#FDBD39",
+      "to": "#fac75f"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Flatirons Website",
+      "url": "https://flatirons.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Fuse Dashboard",
+    "url": "https://fuse.flatirons.com"
   },
+  "openapi": ["/swagger.yaml"],
   "tabs": [
-    {
+    { 
       "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "api"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Importer Setup",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "getting-started/overview",
+        "getting-started/adding-columns",
+        "getting-started/adding-data-validations",
+        "getting-started/adding-data-transformations",
+        "getting-started/embedding"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Accessing Data",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "accessing-data/overview", 
+        "accessing-data/api-access",
+        "accessing-data/record-webhooks",
+        "accessing-data/status-webhooks",
+        "accessing-data/webhook-security",
+        "accessing-data/incognito-mode"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Use Cases",
+      "pages": ["use-cases/csv-imports", "use-cases/bulk-editing"]
+    },
+    {
+      "group": "Using Columns",
       "pages": [
-        "api-reference/introduction"
+        "using-columns/string-columns",
+        "using-columns/boolean-columns",
+        "using-columns/integer-columns",
+        "using-columns/float-columns",
+        "using-columns/email-columns",
+        "using-columns/date-columns",
+        "using-columns/datetime-columns",
+        "using-columns/time-columns",
+        "using-columns/url-columns",
+        "using-columns/dropdown-columns"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Appearance",
+      "pages": ["appearance/modals", "appearance/white-labeling"]
+    },
+    {
+      "group": "Extending Functionality",
+      "pages": ["extending/custom-actions", "extending/creating-your-own-column-type"]
+    },
+    {
+      "group": "JS Implementations",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "js-implementations/angular-csv-importer",
+        "js-implementations/react.js-csv-importer",
+        "js-implementations/vue.js-csv-importer"
+      ]
+    },
+    {
+      "group": "More to Love",
+      "pages": ["more-to-love/translations-i18n"]
+    },
+    {
+      "group": "Overview",
+      "pages": [
+        "api/authentication",
+        "api/pagination"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "api/resources/imports/list-imports",
+        "api/resources/records/import-records"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "linkedin": "https://www.linkedin.com/company/flatirons-development/",
+    "twitter": "https://twitter.com/FlatironsDev",
+    "instagram": "https://instagram.com/flatironsdevelopment"
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-YKRHBFZMVZ"
+    }
+  },
+  "integrations": {
+    "intercom": "xk5esari"
   }
 }
